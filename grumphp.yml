@@ -1,0 +1,17 @@
+# grumphp.yml
+parameters:
+    bin_dir: ./vendor/bin
+    git_dir: .
+    stop_on_failure: false
+    hide_circumvention_tip: true
+    ascii:
+        failed: ~
+        succeeded: ~
+    tasks:
+        phpmd: ~
+        phpspec: ~
+        phpstan: ~
+        php-parse: ~
+        phpunit:
+            config_file: 'phpunit.xml'
+    extensions: []

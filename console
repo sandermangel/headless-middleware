@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+// application.php
+
+require __DIR__.'/src/bootstrap.php';
+
+use Symfony\Component\Console\Application;
+
+$console = new Application();
+
+$console->add(new \Ffm\Apicall\Command\ProcessRecords('process records', $container));
+
+$console->run();

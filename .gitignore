@@ -1,0 +1,6 @@
+/vendor/
+/logs/*
+!/logs/.gitkeep
+/cache/*
+!/cache/.gitkeep
+/src/settings.php

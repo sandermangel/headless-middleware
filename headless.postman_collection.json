@@ -1,0 +1,35 @@
+{
+	"id": "3b31a35c-a793-9675-5824-b71b92e087e6",
+	"name": "headless",
+	"description": "",
+	"order": [
+		"78daa9b3-91ec-f0db-4a79-286e6dee1888"
+	],
+	"folders": [],
+	"timestamp": 1496678522861,
+	"owner": "1218895",
+	"public": false,
+	"requests": [
+		{
+			"id": "78daa9b3-91ec-f0db-4a79-286e6dee1888",
+			"headers": "",
+			"url": "http://headless.localhost/transactions/csv",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3b31a35c-a793-9675-5824-b71b92e087e6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://headless.localhost/transactions/csv",
+			"description": "POST a csv",
+			"descriptionFormat": "html",
+			"time": 1496678522861,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "\"id\",\"date\",\"amount\",\"description\",\"order reference\"\n56739,\"01-04-2017T18:55:20\",10,\"test transaction\",\"1000000000\"\n56740,\"01-04-2017T18:55:26\",-20,\"test transaction 2\",\"1000000001\""
+		}
+	]
+}

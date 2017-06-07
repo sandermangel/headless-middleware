@@ -1,0 +1,40 @@
+<?php
+return [
+    'settings' => [
+        'displayErrorDetails' => true, // set to false in production
+        'addContentLengthHeader' => false, // Allow the web server to send the content-length header
+
+        // Monolog settings
+        'logger' => [
+            'name' => 'slim-app',
+            'path' => __DIR__ . '/../logs/app.log',
+            'level' => \Monolog\Logger::DEBUG,
+        ],
+
+        // Cache settings
+        'cache' => [
+            'path' => __DIR__ . '/../cache',
+        ],
+
+        // DB settings
+        'database' => [
+            'driver'    => 'mysql',
+            'host'      => 'localhost',
+            'database'  => 'database',
+            'username'  => 'root',
+            'password'  => 'password',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ],
+
+        // Magento 1 oauth
+        'magento1' => [
+            'key' => '{{magento rest key}}',
+            'secret' => '{{magento rest secret}}',
+            'callback_url' => '{{application url}}/oauth/magento1/callback',
+            'host' => 'http://magentoshop.com',
+            'admin' => 'http://magentoshop.com/backendurl'
+        ]
+    ],
+];
