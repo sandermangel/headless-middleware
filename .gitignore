@@ -1,6 +1,5 @@
 /vendor/
-/logs/*
-!/logs/.gitkeep
-/cache/*
-!/cache/.gitkeep
+/storage/*
+!/storage/logs/.gitkeep
+!/storage/cache/.gitkeep
 /src/settings.php
