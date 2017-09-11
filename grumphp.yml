@@ -8,10 +8,12 @@ parameters:
         failed: ~
         succeeded: ~
     tasks:
-        phpmd: ~
-        phpspec: ~
+        phpmd:
+            ruleset: ['phpmd.xml']
+        phpcs:
+            standard: 'phpcs.xml'
+            show_warnings: false
         phpstan: ~
-        php-parse: ~
         phpunit:
             config_file: 'phpunit.xml'
     extensions: []
